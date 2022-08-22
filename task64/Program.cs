@@ -17,13 +17,13 @@ Resultmultiplication(m, n);
 void Resultmultiplication(int start, int end)
 {
 
+
+    if (start > end)
     {
-        if (start > end)
-        {
-            return;
-        }
-        Console.Write(" " + start);
-        start++;
-        Resultmultiplication(start, end);
+        return;
     }
+    Console.Write(start + " ");
+    start++;
+    Resultmultiplication(start, end);
+
 }
